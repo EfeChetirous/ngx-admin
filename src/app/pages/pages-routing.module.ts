@@ -5,6 +5,10 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import { OneToOneComponent } from './dashboard/one-to-one/one-to-one.component';
+import { SuperLeagueComponent } from './dashboard/super-league/super-league.component';
+import { OfferComponent } from './dashboard/offer/offer.component';
+import { ScoreboardComponent } from './dashboard/scoreboard/scoreboard.component';
 
 const routes: Routes = [{
   path: '',
@@ -17,6 +21,22 @@ const routes: Routes = [{
     {
       path: 'iot-dashboard',
       component: DashboardComponent,
+    },
+    {
+      path: 'iot-dashboard/one-to-one',
+      component: OneToOneComponent,
+    },
+    {
+      path: 'iot-dashboard/super-league',
+      component: SuperLeagueComponent,
+    },
+    {
+      path: 'iot-dashboard/offer',
+      component: OfferComponent,
+    },
+    {
+      path: 'iot-dashboard/scoreboard',
+      component: ScoreboardComponent,
     },
     {
       path: 'layout',

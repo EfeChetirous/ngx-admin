@@ -13,6 +13,7 @@ import {
 import { NgxEchartsModule } from 'ngx-echarts';
 
 import { ThemeModule } from '../../@theme/theme.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { StatusCardComponent } from './status-card/status-card.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -30,11 +31,15 @@ import { PlayerComponent } from './rooms/player/player.component';
 import { TrafficComponent } from './traffic/traffic.component';
 import { TrafficChartComponent } from './traffic/traffic-chart.component';
 import { FormsModule } from '@angular/forms';
+import { OneToOneComponent } from './one-to-one/one-to-one.component';
+import { SuperLeagueComponent } from './super-league/super-league.component';
+import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 
 @NgModule({
   imports: [
     FormsModule,
     ThemeModule,
+    DashboardRoutingModule,
     NbCardModule,
     NbUserModule,
     NbButtonModule,
@@ -64,6 +69,9 @@ import { FormsModule } from '@angular/forms';
     SolarComponent,
     TrafficComponent,
     TrafficChartComponent,
+    OneToOneComponent,
+    SuperLeagueComponent,
+    ScoreboardComponent
   ],
 })
 export class DashboardModule { }

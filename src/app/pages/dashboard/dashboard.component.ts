@@ -19,34 +19,34 @@ export class DashboardComponent implements OnDestroy {
   private alive = true;
 
   solarValue: number;
-  lightCard: CardSettings = {
-    title: 'Light',
-    iconClass: 'nb-lightbulb',
+  oneToOne: CardSettings = {
+    title: 'Düello',
+    iconClass: 'nb-person',
     type: 'primary',
   };
-  rollerShadesCard: CardSettings = {
-    title: 'Roller Shades',
-    iconClass: 'nb-roller-shades',
+  superLeague: CardSettings = {
+    title: 'Süper Lig',
+    iconClass: 'nb-bar-chart',
     type: 'success',
   };
-  wirelessAudioCard: CardSettings = {
-    title: 'Wireless Audio',
-    iconClass: 'nb-audio',
+  offer: CardSettings = {
+    title: 'Teklif',
+    iconClass: 'nb-lightbulb',
     type: 'info',
   };
-  coffeeMakerCard: CardSettings = {
-    title: 'Coffee Maker',
-    iconClass: 'nb-coffee-maker',
+  scoreboard: CardSettings = {
+    title: 'Scoreboard',
+    iconClass: 'nb-star',
     type: 'warning',
   };
 
   statusCards: string;
 
   commonStatusCardsSet: CardSettings[] = [
-    this.lightCard,
-    this.rollerShadesCard,
-    this.wirelessAudioCard,
-    this.coffeeMakerCard,
+    this.oneToOne,
+    this.superLeague,
+    this.offer,
+    this.scoreboard,
   ];
 
   statusCardsByThemes: {
@@ -59,19 +59,19 @@ export class DashboardComponent implements OnDestroy {
     cosmic: this.commonStatusCardsSet,
     corporate: [
       {
-        ...this.lightCard,
+        ...this.oneToOne,
         type: 'warning',
       },
       {
-        ...this.rollerShadesCard,
+        ...this.superLeague,
         type: 'primary',
       },
       {
-        ...this.wirelessAudioCard,
+        ...this.offer,
         type: 'danger',
       },
       {
-        ...this.coffeeMakerCard,
+        ...this.scoreboard,
         type: 'info',
       },
     ],
