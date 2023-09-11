@@ -39,5 +39,5 @@ export class TabsComponent {
       route: '/pages/layout/tabs/tab2',
     },
   ];
-
+  
 }

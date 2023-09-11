@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OfferComponent } from './offer.component';
-
+import { ThemeModule } from '../../../@theme/theme.module';
+import {  NbRouteTabsetModule,  NbTabsetModule} from '@nebular/theme';
 
 
 @NgModule({
-  declarations: [
-    OfferComponent
-  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ThemeModule,
+    NbRouteTabsetModule,
+    NbTabsetModule
+  ],
+  declarations: [
   ]
 })
 export class OfferModule { }

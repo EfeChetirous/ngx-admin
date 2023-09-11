@@ -9,6 +9,7 @@ import {
   NbSelectModule,
   NbListModule,
   NbIconModule,
+  NbRouteTabsetModule, 
 } from '@nebular/theme';
 import { NgxEchartsModule } from 'ngx-echarts';
 
@@ -32,6 +33,7 @@ import { TrafficComponent } from './traffic/traffic.component';
 import { TrafficChartComponent } from './traffic/traffic-chart.component';
 import { FormsModule } from '@angular/forms';
 import { OneToOneComponent } from './one-to-one/one-to-one.component';
+import { OfferComponent } from './offer/offer.component';
 import { SuperLeagueComponent } from './super-league/super-league.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 
@@ -51,6 +53,7 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     NbIconModule,
     NbButtonModule,
     NgxEchartsModule,
+    NbRouteTabsetModule
   ],
   declarations: [
     DashboardComponent,
@@ -70,6 +73,7 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     TrafficComponent,
     TrafficChartComponent,
     OneToOneComponent,
+    OfferComponent,
     SuperLeagueComponent,
     ScoreboardComponent
   ],

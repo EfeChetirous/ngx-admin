@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { ThemeModule } from '../../../@theme/theme.module';
+import {  NbRouteTabsetModule,  NbTabsetModule} from '@nebular/theme';
 
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    NbRouteTabsetModule,
+    NbTabsetModule,
+    ThemeModule
+  ],
+  declarations: [
   ]
 })
-export class OneToOneModule { }
+export class OneToOneModule {
+
+
+ }

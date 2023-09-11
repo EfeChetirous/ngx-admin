@@ -13,6 +13,13 @@ const routes: Routes = [{
         {
           path: 'one-to-one',
           component: OneToOneComponent,
+          children: [
+            {
+              path: '',
+              redirectTo: 'tab-start',
+              pathMatch: 'full',
+            }
+          ],
         },
         {
             path: 'super-league',
@@ -25,7 +32,7 @@ const routes: Routes = [{
         {
             path: 'scoreboard',
             component: ScoreboardComponent
-        }
+        }          
     ],
 }];
 

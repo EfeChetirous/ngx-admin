@@ -1,1 +1,30 @@
-<p>offer works!</p>
+<div class="col-12">
+    <nb-card size="large">
+      <nb-tabset fullWidth (changeTab)="tabClicked($event)">
+        <nb-tab tabTitle="Aktif Teklif">
+          <p>
+            <b>{{offer.name}}</b> 
+          <br>
+          <span> Başlangıç Tarihi: {{offer.startDate}} - Bitiş Tarihi : {{offer.endDate}}</span>
+          <br>
+          <span> {{offer.message}} </span>
+          </p>      
+        </nb-tab>
+        <nb-tab tabTitle="Teklif Geçmişi">
+          <div class="col-md-12 col-lg-6 col-xxxl-6">
+              <nb-card size="medium">
+                <nb-card-header>
+                  Teklifler
+                </nb-card-header>
+                <nb-list>
+                  <nb-list-item *ngFor="let item of offerHistory">
+                   <p style="font-size: x-small;"> <b>Tarih :</b> {{item.offerDateRange}} <br> <b>Teklif : </b> {{ item.name }} <br> <b>Sonuç:</b> {{ item.offerResultMessage }} </p>
+                  </nb-list-item>
+                </nb-list>
+              </nb-card>
+            </div>
+          
+        </nb-tab>
+      </nb-tabset>
+    </nb-card>
+  </div>

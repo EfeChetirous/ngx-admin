@@ -1,3 +1,4 @@
+import { OneToOneModule } from './dashboard/one-to-one/one-to-one.module';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 

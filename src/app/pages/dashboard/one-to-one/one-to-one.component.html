@@ -1,1 +1,30 @@
-<p>one-to-one works!</p>
+  <div class="col-12">
+    <nb-card size="large">
+      <nb-tabset fullWidth (changeTab)="tabClicked($event)">
+        <nb-tab tabTitle="Düello Başlat">
+          <p><b>Bu sekme üzerinden günlük satış miktarlarınızın karşışaltırıldığı düellonuzu başlatabilirsiniz!</b> 
+          <br>
+          <br>
+          <button nbButton class="status-success" hero>
+            Başlat
+          </button>          
+        </p>
+        </nb-tab>
+        <nb-tab tabTitle="Düello Geçmişi">
+          <div class="col-md-12 col-lg-6 col-xxxl-6">
+              <nb-card size="medium">
+                <nb-card-header>
+                  Geçmiş Düellolar
+                </nb-card-header>
+                <nb-list>
+                  <nb-list-item *ngFor="let item of historyItems">
+                   <p style="font-size: x-small;"> <b>Tarih :</b> {{item.duelloDate}} - <b>Yarışmacı : </b> {{ item.name }} - <b>Sonuç: {{ item.result }}</b> </p>
+                  </nb-list-item>
+                </nb-list>
+              </nb-card>
+            </div>
+          
+        </nb-tab>
+      </nb-tabset>
+    </nb-card>
+  </div>
