@@ -3,11 +3,11 @@
       <nb-tabset fullWidth (changeTab)="tabClicked($event)">
         <nb-tab tabTitle="Aktif Teklif">
           <p>
-            <b>{{offer.name}}</b> 
+            <b>{{this.offer.name}}</b> 
           <br>
-          <span> Başlangıç Tarihi: {{offer.startDate}} - Bitiş Tarihi : {{offer.endDate}}</span>
+          <span> {{this.offer.offerDateRange}}</span>
           <br>
-          <span> {{offer.message}} </span>
+          <span> {{this.offer.offerResultMessage}} </span>
           </p>      
         </nb-tab>
         <nb-tab tabTitle="Teklif Geçmişi">

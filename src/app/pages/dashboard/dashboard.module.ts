@@ -36,6 +36,8 @@ import { OneToOneComponent } from './one-to-one/one-to-one.component';
 import { OfferComponent } from './offer/offer.component';
 import { SuperLeagueComponent } from './super-league/super-league.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+//import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   imports: [
@@ -53,7 +55,8 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     NbIconModule,
     NbButtonModule,
     NgxEchartsModule,
-    NbRouteTabsetModule
+    NbRouteTabsetModule,
+    //HttpClientModule
   ],
   declarations: [
     DashboardComponent,
